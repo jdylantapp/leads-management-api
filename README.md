@@ -10,26 +10,6 @@ View and add your leads.
 
 ---
 
-## Tech Stack
-
-### Frontend
-
-* Next.js
-* Tailwind CSS + DaisyUI
-
-### Backend
-
-* Node.js
-* Express
-* MongoDB (Mongoose)
-
-### Deployment
-
-* Vercel (frontend)
-* Render (backend)
-
----
-
 ## Environment Variables
 
 ### Frontend (`.env`)
