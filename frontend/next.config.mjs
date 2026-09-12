@@ -3,14 +3,14 @@ const nextConfig = {
   /* config options here */
   reactCompiler: true,
 
-  async rewrites() {
+  /*async rewrites() {
     return [
       {
         source: '/api/leads',
         destination: 'http://localhost:5001/api/leads'
       }
     ]
-  },
+  },*/
 };
 
 export default nextConfig;

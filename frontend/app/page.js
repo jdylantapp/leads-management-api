@@ -18,7 +18,7 @@ export default function Home() {
 
   const getLeads = async () => {
     try {
-      const res = await fetch('/api/leads')
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/leads`)
       if (!res.ok) throw new Error('Failed to get leads')
       const data = await res.json()
       setLeads(data)
@@ -40,7 +40,7 @@ export default function Home() {
     event.preventDefault()
 
     try {
-      const res = await fetch('/api/leads', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/leads`, {
         method: 'POST',
         headers: {'Content-Type' : 'application/json'},
         body: JSON.stringify({
